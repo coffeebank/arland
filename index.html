@@ -17,18 +17,6 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     
-    <!-- Mobile header -->
-    <div class="d-lg-none">
-        <div align="left" id="hover" style="position: fixed; top:0px; left:0px; z-index:20; width:15px;">
-            <a href="#" data-activates="slide-out" class="button-collapse btn-floating btn-large waves-effect waves-light teal" style="margin-top:10px;margin-left:10px;"><i class="material-icons">menu</i></a>
-        </div>
-        <script>  // Initialize collapse button
-            $(".button-collapse").sideNav({draggable: true});
-            // Initialize collapsible (uncomment the line below if you use the dropdown variation)
-            //$('.collapsible').collapsible();
-        </script>
-    </div>
-    
     <!-- More custom css -->
     <style>
         .parallax { 
@@ -84,6 +72,19 @@
         <li><a class="subheader">Subheader</a></li>
         <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
     </ul>
+    
+    <!-- Mobile header -->
+    <div class="d-lg-none">
+        <div align="left" id="hover" style="position: fixed; top:0px; left:0px; z-index:20; width:15px;">
+            <a href="#" data-activates="slide-out" class="button-collapse btn-floating btn-large waves-effect waves-light teal" style="margin-top:10px;margin-left:10px;"><i class="material-icons">menu</i></a>
+        </div>
+        <script>  // Initialize collapse button
+            $(".button-collapse").sideNav();
+            // Initialize collapsible (uncomment the line below if you use the dropdown variation)
+            //$('.collapsible').collapsible();
+        </script>
+    </div>
+    
 </head>
 <body style="font-family: 'Lato', sans-serif;">
     <div class="parallax">
