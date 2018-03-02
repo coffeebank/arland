@@ -18,31 +18,18 @@
     
     <!-- More custom css -->
     <style>
-        body {
-            background: #ffffff url("media/wallpaper.png") no-repeat center left;
-            background-size:cover;
-            height: 100%;
-            margin: 0;
-        }
-        section {
-          height: 100vh;
-        }
-        section:nth-child(1) {
-          background: lightblue;
-        }
-        section:nth-child(2) {
-          background: lightgreen;
-        }
-        section:nth-child(3) {
-          background: purple;
-        }
-        section:nth-child(4) {
-            background: url("media/wallpaper.png") no-repeat center left;
-            background-size:cover;
-            background-color: rgba(0, 0, 0, 0.4);
-        }
-        section:nth-child(5) {
-          background: yellow;
+        .parallax { 
+            /* The image used */
+            background-image: url("media/wallpaper.png");
+
+            /* Set a specific height */
+            height: 100vh; 
+
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
     </style>
     
@@ -74,8 +61,7 @@
     </div>
 </head>
 <body>
-    <section>test</section>
-    <section>test2</section>
+    <div class="parallax">test</div>
     
     <div id="footer"></div>
 </body>
