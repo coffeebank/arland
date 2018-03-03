@@ -15,6 +15,11 @@ body {
 }
 
 
+/* disable tap to hold on mobile */
+-webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-user-select: text;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+
+
 /* Bootstrap port */
 
 .d-none {

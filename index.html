@@ -56,6 +56,12 @@
         }
     </style>
     
+    <script> 
+        $(function(){
+          $("#status").load("status.html"); 
+        });
+    </script>  
+    
     <!--
     <script> 
         $(function(){
@@ -113,10 +119,8 @@
                 </div>
                 
               <a id="stn" href="#nav" class="brand-logo" style="padding-left:15px;padding-right:15px;font-size:21px">Arland</a>
-              <ul class="right hide-on-small-and-down">
-                <li style="padding-left:15px;padding-right: 15px"><i class="material-icons green-text">lens</i></li>
-                <li style="padding-right: 25px">Status:&nbsp;&nbsp;<b>ONLINE</b></li>
-              </ul>
+            
+                <div id="status"></div>
                 
             </div>
         </nav>
