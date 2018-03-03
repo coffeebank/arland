@@ -76,7 +76,7 @@
     <div id="header"></div>
     -->
     
-    <ul id="slide-out" class="side-nav fixed">
+    <ul id="slide-out" class="side-nav fixed" draggable="false">
         <li><div class="user-view">
             <div class="background">
             <img src="media/wallpaper.png">
@@ -96,10 +96,70 @@
         <li style="position:sticky;position: -webkit-sticky;bottom: 0;"><div class="divider"></div><a class="waves-effect" href="#!"><i class="material-icons">info_outline</i>About</a></li>
     </ul>
     
+    <script>
+        // Select all links with hashes
+        $('a[href*="#"]')
+          // Remove links that don't actually link to anything
+          .not('[href="#"]')
+          .not('[href="#0"]')
+          .click(function(event) {
+            // On-page links
+            if (
+              location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+              && 
+              location.hostname == this.hostname
+            ) {
+              // Figure out element to scroll to
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+              // Does a scroll target exist?
+              if (target.length) {
+                // Only prevent default if animation is actually gonna happen
+                event.preventDefault();
+                $('html, body').animate({
+                  scrollTop: target.offset().top
+                }, 600, function() {
+                  // Callback after animation
+                  // Must change focus!
+                  var $target = $(target);
+                  $target.focus();
+                  if ($target.is(":focus")) { // Checking if the target was focused
+                    return false;
+                  } else {
+                    $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                    $target.focus(); // Set focus again
+                  };
+                });
+              }
+            }
+          });
+    </script>
     
 </head>
 <body style="font-family: 'Lato', sans-serif;" oncontextmenu="return false;">
     <div id="stt"></div>
+    
+    <!-- mobile-only top nav -->
+    <div class="hide-on-large-only">
+          <div class="navbar-fixed">
+            <nav class="grey darken-3">
+              <div class="nav-wrapper">
+                  
+                    <div class="paddpc" id="hover">
+                        <a href="#" data-activates="slide-out" class="button-collapse waves-effect"><i class="material-icons">menu</i></a>
+                    </div>
+                    <script>  // Initialize collapse button
+                        $(".button-collapse").sideNav();
+                        // Initialize collapsible (uncomment the line below if you use the dropdown variation)
+                        $('.collapsible').collapsible();
+                    </script>
+                  
+                  <a href="#!" class="brand-logo" style="padding-left:15px;padding-right:15px;font-size:21px">Arland</a>
+              </div>
+            </nav>
+          </div>
+    </div>
+    
     <div class="parallax">
         <div class="paddpc" style="position: absolute;top: 50%;left: 50%;-moz-transform: translateX(-50%) translateY(-50%);-webkit-transform: translateX(-50%) translateY(-50%);transform: translateX(-50%) translateY(-50%);text-align: center; color:white;">
             <br><br><br>
@@ -110,24 +170,13 @@
         </div>
     </div>
     
-    <!-- navbar -->
+    <!-- PC navbar + status, mobile status only -->
     <div style="background-color:#414141;position:sticky;position: -webkit-sticky;top: 0;">
         <nav class="grey darken-3">
             <div class="nav-wrapper">
                 
-                <div class="show-on-med-and-down">
-                    <div class="paddpc" id="hover">
-                        <a href="#" data-activates="slide-out" class="button-collapse waves-effect"><i class="material-icons">menu</i></a>
-                    </div>
-                    <script>  // Initialize collapse button
-                        $(".button-collapse").sideNav();
-                        // Initialize collapsible (uncomment the line below if you use the dropdown variation)
-                        $('.collapsible').collapsible();
-                    </script>
-                </div>
-                
-              <a id="stn" href="#nav" class="brand-logo" style="padding-left:15px;padding-right:15px;font-size:21px">Arland</a>
-            
+                <a id="stn" href="#nav" class="brand-logo hide-on-med-and-down" style="padding-left:15px;padding-right:15px;font-size:21px">Arland</a>
+                <b class="hide-on-small-only hide-on-large-only left" style="padding-left:15px;padding-right:15px;font-size:16px;letter-spacing:1px;">Check Server Status</b>
                 <div id="status"></div>
                 
             </div>
