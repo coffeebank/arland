@@ -1,7 +1,15 @@
-/* MaterializeCSS customize */
+/* no scrollbars */
+html {
+     -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+    display: none;
+}
 
+/* MaterializeCSS customize */
 body {
-  padding-left: 300px;
+    padding-left: 300px;
+    font-family: 'Lato', sans-serif;
 }
 
 @media only screen and (max-width : 992px) {
@@ -12,6 +20,36 @@ body {
 
 .parallax-container {
   height: "100px";
+}
+
+.paddpc {
+  padding-left: 300px;
+}
+
+@media only screen and (max-width : 992px) {
+  .paddpc {
+    padding-left: 0;
+  }
+}
+
+/* w3css port */
+.w3-animate-opacity{
+    animation:opac 0.8s}
+
+@keyframes opac{
+    from{opacity:0} to{opacity:1}
+}
+
+.progress-container {
+  width: 100%;
+  height: 4px;
+  background: rgba(0, 0, 0, 0);
+}
+
+.progress-bar {
+  height: 4px;
+  background: #ccc;
+  width: 0%;
 }
 
 
