@@ -12,11 +12,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
 
     <!-- mobile webapp stuffs -->
-    <link rel="manifest" href="manifest.json"> <!-- chrome manifest -->
-    <meta name="apple-mobile-web-app-title" content="Arland App" />
+    <link rel="manifest" href="manifest.json"> <!-- chrome -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#09364E"> 
+    <link rel="icon" sizes="128x128" href="media/icon.png">
+    <meta name="apple-mobile-web-app-title" content="Arland App" /> <!-- safari/ios -->
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-    <meta name="apple-mobile-web-app-capable" content="yes"> <!-- safari -->
-    <meta name="mobile-web-app-capable" content="yes"> <!-- chrome -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="apple-touch-startup-image" href="media/icon.png">
     <link rel="apple-touch-icon" href="media/faviconhd.ico" />
 
     
@@ -60,6 +63,12 @@
             background-size: cover;
         }
     </style>
+    
+    <noscript>
+        <style>
+            #hidenojs {display:none;}
+        </style>
+    </noscript>
     
     <script> 
         $(function(){
@@ -109,6 +118,22 @@
           preventLongPressMenu(document.getElementsByTagName('slide-out'));
         }
     </script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+        // iOS web app full screen hacks.
+        if(window.navigator.standalone == true) {
+                // make all link remain in web app mode.
+                $('a').click(function() {
+                        window.location = $(this).attr('href');
+            return false;
+                });
+        }
+        });
+    </script>
+    <script type="text/javascript" charset="utf-8">
+        document.write('<style type="text/css" media="screen">#nojs { display: none; }</style>');
+    </script>
+
     
     <ul id="slide-out" class="side-nav fixed">
         <li><div class="user-view">
@@ -191,7 +216,8 @@
               <div class="nav-wrapper">
                   
                     <div class="paddpc" id="hover">
-                        <a href="#" data-activates="slide-out" class="button-collapse waves-effect"><i class="material-icons">menu</i></a>
+                        <a href="#" id="hidenojs" data-activates="slide-out" class="button-collapse waves-effect"><i class="material-icons">menu</i></a>
+                        <a href="assets/sidenav.html" id="nojs"><i class="material-icons">menu</i></a>
                     </div>
                     <script>  // Initialize collapse button
                         $(".button-collapse").sideNav();
@@ -199,7 +225,7 @@
                         $('.collapsible').collapsible();
                     </script>
                   
-                  <a href="#!" class="brand-logo" style="padding-left:15px;padding-right:15px;font-size:21px">Arland</a>
+                  <a href="#!" class="brand-logo" id="hidenojs" style="padding-left:15px;padding-right:15px;font-size:21px">Arland</a>
               </div>
             </nav>
           </div>
@@ -249,6 +275,7 @@
                     <div style="max-height:10vh;overflow:hidden;"><img src="media/creeper.png" width="60%" /></div>
                     <div class="card-panel grey lighten-5 grey-text text-darken-3 z-depth-3" style="margin:0px">
                         <div id="serverip"></div>
+                        <div id="nojs"><p>Sorry! Your browser doesn't support javascript. <a href="assets/serverip.html" target="_blank">Click here</a> to see the Server IP!</p></div>
                     </div>
                 </div>
                 
@@ -266,7 +293,8 @@
                     <h4 class="grey-text text-lighten-5" style="letter-spacing: 2px;font-size:32px;padding-top:10px;padding-bottom:10px;"><b>#ARLAND-MC</b></h4>
                     <h5 class="grey-text text-lighten-2" style="letter-spacing: 0.5px;font-size:18px;padding-top:10px;padding-bottom:10px;">Get the latest Arland updates, plus a friendly, engaging community!</h5>                    
                     <br><br>
-                    <a class="waves-effect waves-light btn-large modal-trigger light-blue darken-3" href="#modal1"><i class="material-icons left">forum</i>JOIN NOW&nbsp;&nbsp;&nbsp;&#62;</a>
+                    <a class="waves-effect waves-light btn-large modal-trigger light-blue darken-3" id="hidenojs" href="#modal1"><i class="material-icons left">forum</i>JOIN NOW&nbsp;&nbsp;&nbsp;&#62;</a>
+                    <div id="nojs" class="grey-text text-lighten-2"><p><a href="https://discord.gg/htYgEuC" target="_blank">JOIN NOW&nbsp;&#62;</a></p></div>
                     
                     <!-- https://discord.gg/htYgEuC discord invite link -->
                     
