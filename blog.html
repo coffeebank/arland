@@ -27,6 +27,7 @@
     <script>  
         $(function(){
           $("#footer").load("footer.html"); 
+          $("#status").load("assets/status.html"); 
           $("#sidenav").load("assets/sidenav.html"); 
         });
     </script>
@@ -90,11 +91,14 @@
                  </script>
              </div>
 
-           <a id="stn" href="#nav" class="brand-logo" style="padding-left:15px;padding-right:15px;font-size:21px">Arland</a>
+           <a id="stn" href="#nav" class="brand-logo hide-on-med-and-down" style="padding-left:15px;padding-right:15px;font-size:21px">Arland Blog</a>
+           <div id="status"></div>
 
          </div>
      </nav>
     </div>
+    
+    <iframe src="https://arlandserver.weebly.com/blogframe" width="100%" frameborder="0" style="height: 100vh; z-index:-1;"></iframe>
     
 </body>
 </html>
