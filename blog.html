@@ -10,6 +10,16 @@
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-88021769-3"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-88021769-3');
+    </script>
+    
     <!-- Custom CSS -->
     <link type="text/css" rel="stylesheet" href="main.css" />
     <title>Arland - Minecraft Bedrock Server</title>
@@ -26,9 +36,8 @@
     
     <script>  
         $(function(){
-          $("#footer").load("footer.html"); 
-          $("#status").load("assets/status.html"); 
-          $("#sidenav").load("assets/sidenav.html"); 
+          $("#footer").load("assets/footer.html"); 
+          $("#status").load("status.html"); 
         });
     </script>
 
