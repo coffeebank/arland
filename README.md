@@ -4,10 +4,21 @@ Arland: Minecraft Bedrock Server
 
 https://gitnisyl.github.io/arland
 
-###### ~~https://arland.pythonanywhere.com~~ (6/2/19)
 
----
+## View/Edit Arland IP
+
+You can view/do a pull request to edit the Server IP and Port (if relevant) for Arland at
+- [serverip.html](https://github.com/gitnisyl/arland/blob/master/serverip.html)
+
+You can view/do a pull request to edit the Server Status for Arland at
+- [status.html](https://github.com/gitnisyl/arland/blob/master/status.html)
+
+
+## Attributions and Notes
+
+Currently a Responsive Website, but not yet a PWA.
 
 Arland was created in collaboration with [oneskres](https://github.com/oneskres).
 
-Currently a Responsive Website, but not yet a PWA.
+Old domains:
+- ~~https://arland.pythonanywhere.com~~ (6/2/19)
