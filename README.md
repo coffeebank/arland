@@ -18,8 +18,6 @@ You can view/do a pull request to edit the Server Status for Arland at
 
 ## Attributions and Notes
 
-Currently a Responsive Website, but not yet a PWA.
-
 Arland was created in collaboration with [oneskres](https://github.com/oneskres). See [our About page](https://gitnisyl.github.io/arland/about.html) for more info.
 
 Old domains:
