@@ -435,6 +435,18 @@ Anyone playing the game on Windows 10, iOS, Android, Xbox One, Nintendo Switch a
         
         
     </div>
+
+    
+    <script type="module">
+      import {Workbox} from 'https://storage.googleapis.com/workbox-cdn/releases/4.0.0/workbox-window.prod.mjs';
+    
+       if ('serviceWorker' in navigator) {
+         const wb = new Workbox('/service-worker.js');
+         /* add 'workbox page reload' for users here (optional) */
+         wb.register();
+         }
+    </script>
+    
     
     <div id="footer"></div>
 </body>
