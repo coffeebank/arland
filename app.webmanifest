@@ -1,7 +1,11 @@
 {
+  "background_color": "#2196F3",
+  "display": "standalone",
+  "orientation":"portrait",
   "short_name": "Arland",
   "name": "Arland App",
   "description": "Minecraft Bedrock Server",
+  "lang": "en-US",
   "icons": [{
     "src": "images/touch/icon-128x128.png",
     "type": "image/png",
@@ -20,8 +24,5 @@
     "sizes": "128x128"
   }],
   "start_url": "index.html",
-  "display": "standalone",
-  "orientation": "portrait",
-  "background_color": "#2196F3",
-  
-}
+  "scope": "/"
+  }
