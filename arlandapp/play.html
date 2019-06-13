@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<title>Arland App</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Minecraft Server - Join at play.arland.me!">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    
+<header>
+</header>
+<body>
+    <br><br><br>
+    <h3 class="w3-center">Loading...</h3>
+    
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  if($(window).width() <= 750) {
+window.location = "play-mobile.html";
+}
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  if($(window).width() >= 751) {
+window.location = "play-pc.html";
+}
+});
+</script>
+    
+    
+<br><br>
+
+</body>
+</html>
