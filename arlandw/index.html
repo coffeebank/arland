@@ -9,6 +9,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 	<meta name="google-site-verification" content="wOLPP3uWHmQyLfkWzTjpwEPk6k23itErrdZDpVw8Q9A" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 	<link id="wsite-base-style" rel="stylesheet" type="text/css" href="files/sites.css?buildTime=1234" />
 	<link rel="stylesheet" type="text/css" href="files/fancybox.css?1234" />
 	<link rel="stylesheet" type="text/css" href="files/social-icons.css?buildtime=1234" media="screen,projection" />
@@ -33,6 +35,18 @@
 	<link href='https://fonts.googleapis.com/css?family=Actor&subset=latin,latin-ext' rel='stylesheet'
 		type='text/css' />
 	<style type='text/css'>
+		.isolated-component {
+			all: revert;
+		}
+		.nullifytext {
+			font-family:'Segoe UI',Arial,sans-serif !important;
+			font-size: 1em !important;
+			letter-spacing: 0px !important;
+			text-decoration: none !important;
+		}
+		.alert input:checked ~ * {
+			display: none;
+		}
 		.wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph,
 		.wsite-elements.wsite-not-footer:not(.wsite-header-elements) p,
 		.wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-block .product-title,
@@ -313,7 +327,7 @@
 	<script> _W.themePlugins = { "navpane": { "condense": 1024, "forced": 1 } };</script>
 	<script src='files/theme-plugins.js?buildTime=1234'></script>
 	<script type="text/javascript"> _W.recaptchaUrl = "https://www.google.com/recaptcha/api.js"; </script>
-	<script type="text/javascript">< !--
+	<script type="text/javascript">
 	var IS_ARCHIVE = 1;
 
 		function initFlyouts() {
@@ -346,8 +360,14 @@
 
 						</a>
 
-					</span></div>
-
+					</span>
+				</div>
+				<div class="nullifytext alert" style="position:absolute;top:0;right:0;text-decoration:none;z-index:4000;padding:20px;">
+						<div>
+								<span style="background-color:#fcf8e3;color:#000000;font-family:'Segoe UI',Arial,sans-serif;font-size:1em;padding:15px;">
+									This app has been deprecated. Please use our new <a href="https://gitnisyl.github.io/arland">Arland PWA</a>.</span> 
+						</div>
+				</div>
 
 			</div><!-- end .container -->
 
@@ -2255,6 +2275,9 @@
 		ga('send', 'pageview');
 
 	</script>
+
+
+
 </body>
 
 </html>
