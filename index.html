@@ -240,7 +240,6 @@
           document.getElementById("myBar").style.width = scrolled + "%";
         }
     </script>
-
 </head>
 <body oncontextmenu="return false;">
     <div id="stt"></div>
@@ -448,6 +447,21 @@ Anyone playing the game on Windows 10, iOS, Android, Xbox One, Nintendo Switch a
          /* add 'workbox page reload' for users here (optional) */
          wb.register();
          }
+    </script>
+
+    <div id="newurl" class="modal">
+      <div class="modal-content">
+        <h4>We've changed our website's link!</h4>
+        <p>Please update your bookmark to <strong>https://gitnisyl.github.io/arland/</strong> to access our website from the future. <a href="https://arlandserver.weebly.com/blogframe/arland-updates-project-evergreen-and-beyond" target="_blank" rel="noopener">Learn more about our change here.</a></p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">OK</a>
+      </div>
+    </div>
+    <script type="text/javascript">
+      if(document.referrer == 'https://arland.pythonanywhere.com'){
+        $('#newurl').modal('open');
+      }else{}
     </script>
     
     
