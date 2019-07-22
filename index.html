@@ -458,12 +458,14 @@ Anyone playing the game on Windows 10, iOS, Android, Xbox One, Nintendo Switch a
         <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">OK</a>
       </div>
     </div>
+    <script>
+      $(document).ready(function(){
+        // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+        $('.modal').modal();
+      });
+    </script>
     <script type="text/javascript">
-      if(document.referrer.split('/')[2] === 'pythonanywhere.com'){
-        $(document).ready(function(){
-          // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
-          $('.modal').modal();
-        });
+      if(document.referrer){
         $('#newurl').modal('open');
       }else{}
     </script>
