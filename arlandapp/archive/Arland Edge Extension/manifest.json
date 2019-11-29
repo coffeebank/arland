@@ -1,0 +1,20 @@
+{
+    "author": "Arland Studios",
+    "browser_action": {
+        "default_icon": {
+            "128px": "icon.png"
+        },
+        "default_popup": "popup.html"
+    },
+    "description": "The official Arland Edge extension. Stay up to date with everything Arland!",
+    "icons": {
+        "128": "icon.png"
+    },
+    "manifest_version": 2,
+    "name": "Arland",
+    "version": "0.6.2",
+    "-ms-preload": {
+        "backgroundScript": "backgroundScriptsAPIBridge.js",
+        "contentScript": "contentScriptsAPIBridge.js"
+    }
+}
