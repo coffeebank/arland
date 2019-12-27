@@ -1,0 +1,199 @@
+---
+layout: default
+---
+
+<style>
+    .acbpbody {
+        padding-top: 65px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: "Oxygen";
+    }
+    .acbpbody ul {
+        padding-left: 2em;
+        list-style-type: initial;
+        margin-bottom: 1.85em;
+    }
+    .acbpbody li {
+        list-style-type: initial !important;
+    }
+    .acbpbody strong {
+        font-weight: bold;
+    }
+    .acbpattrib {
+        padding-bottom: 0.5em;
+        display:flex;
+        align-items:center;
+        font-family: "Actor";
+        font-size: 0.9em;
+    }
+    .acbpatchip {
+        margin-top: 0.25em;
+        margin-bottom: 1em;
+    }
+    .acbpback {
+        margin-top: 0px !important;
+        margin-bottom: 20px !important;
+    }
+    .acbpcontent {
+        padding: 2em !important;
+    }
+    .acbpcontent p {
+        margin-bottom: 1.65em !important;
+    }
+    .acbpccont {
+        width: 80%;
+    }
+    .acbpcdate {
+        font-size: 0.8em;
+    }
+    .acbpcimg, .acbpcimg2 {
+        height: 120px !important;
+    }
+    .acbpcimg2 {
+        width: 120px !important;
+    }
+    .acbpcline {
+        font-size: 1em;
+    }
+    .acbpcname {
+        font-family: "Oxygen" !important;
+        font-size: 1.25em !important;
+        padding-bottom: 0.5em;
+    }
+    .acbpctitle {
+        font-size: 1.5em;
+    }
+    .acbpnextprev {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+    }
+    .acbpnextprev .btn, .acbpback {
+        text-transform: none !important;
+    }
+    .acbptitle, .acbpdate, .acbpctitle, .acbpcline {
+        font-family: "Actor" !important;
+        font-weight: 600;
+    }
+    .acbpdate {
+        font-size: 1em;
+    }
+    .acbptitle {
+        font-size: 2em;
+    }
+    .btn-large {
+        margin-top: 1em;
+        margin-bottom: 1em;
+        background-color: #414141;
+    }
+    .btn-large:hover {
+        background-color: #616161;
+    }
+    @media only screen and (max-width: 600px) {
+        .acbpccont {
+            width: 100%;
+        }
+        .acbpcimg, .acbpcimg2 {
+            height: 40px !important;
+        }
+        .acbpcimg2 {
+            width: 40px !important;
+            margin-right: 0.5em;
+        }
+        .acbpcname {
+            font-size: 0.9em;
+        }
+    }
+</style>
+
+<div class="acbpbody">
+    <!-- <a class="waves-effect waves-light btn teal lighten-2 acbpback" href="../../"><i class="material-icons left">keyboard_arrow_left</i>All Posts</a> -->
+    
+    <h2 class="acbptitle">{{ page.title }}</h2>
+    <p class="acbpdate">{{ page.date | date: '%B %d, %Y' }}</p>
+    <div class="acbpatchip chip">
+        <img src="{{ site.suburlcompat }}media/icon.png" alt="Arland logo">
+        Arland Staff
+    </div>
+    <!-- <div class="acbpattrib">
+        <img src="{{ site.suburlcompat }}media/icon.png" width="30px" class="circle" style="margin-right:0.75em;">
+        <p>by Arland Staff</p>
+    </div> -->
+
+    <div class="card acrounded acmargint">
+        <div class="card-content acbpcontent">
+            {{ content }}
+        </div>
+    </div>
+
+    <div class="acbpnextprev">
+        {% if page.previous == nil %}
+            <a class="btn disabled" style="margin-top:1em;margin-bottom:0.25em;">Previous Post</a>
+        {% else %}
+            <a class="waves-effect waves-light btn teal lighten-2" style="margin-top:1em;margin-bottom:0.25em;" href="../{{ page.previous.url | remove_first: "/" }}">Previous Post</a>
+        {% endif %}
+        {% if page.next == nil %}
+            <a class="btn disabled" style="margin-top:1em;margin-bottom:0.25em;">Next Post</a>
+        {% else %}
+            <a class="waves-effect waves-light btn teal lighten-2" style="margin-top:1em;margin-bottom:0.25em;" href="../{{ page.next.url | remove_first: "/" }}">Next Post</a>
+        {% endif %}
+    </div>
+
+    <div style="padding-top:5em;"></div>
+    <hr align="left" style="width:3em;">
+    <h2 class="acbpctitle">Comments 💬</h2>
+    <div class="acbpccont" style="margin-top:40px;">
+        <div class="card horizontal grey lighten-4 acrounded acbpcomments">
+            <div class="card-content">
+                <span class="acbpcline">Join the Conversation</span>
+                <p style="padding-top:0.25em;padding-bottom:0.25em;">People are talking. Add a new comment below!</p>
+                <a class="waves-effect waves-light btn cyan darken-1" style="margin-top:1em;margin-bottom:0.25em;" href="https://github.com/gitnisyl/arland/issues/5" target="_blank"><i class="material-icons">chat</i></a>
+            </div>
+        </div>
+        <a onclick="var delayInMS = 700;document.getElementById('showcommentsclicker').style.display='none';setTimeout(function() {document.getElementById('showcomments').style.display='block'}, delayInMS);" id="showcommentsclicker" style="cursor:pointer;display:block;margin-top:2em;">Load Comments...</a>
+        <div id="showcomments" style="display:none;">
+            <div id="ghcomments"></div>
+        </div>
+    </div>
+
+<title>{{ page.title }} - Arland Blog</title>
+<meta property="og:site_name" content="Arland Blog">
+<meta property="og:title" content="{{ page.title }}">
+<meta property="og:description" content="{{ post.content | markdownify | strip_html | truncatewords: 22 }}">
+<meta property="og:image" content="{{ site.suburlcompat }}media/icon.png">
+<meta property="og:url" content="{{site.url}}{{ post.url }}">
+
+<script> // fetch api status
+    function createNode(element) {
+        return document.createElement(element);
+    }
+    function append(parent, el) {
+        return parent.appendChild(el);
+    }
+    const commentsapi = document.getElementById('ghcomments');
+    const url = 'https://api.github.com/repos/gitnisyl/arland/issues/5/comments';
+    fetch(url)
+    .then((resp) => resp.json())
+    .then(function(data) {
+        let commentsfeed = data;
+        document.getElementById("ghcomments").innerHTML = "";
+        return commentsfeed.map(function(comments) {
+        let div = createNode('div');
+        if (comments.created_at == comments.updated_at){
+            div.className = `card horizontal grey lighten-2 acrounded acbpcomments`
+            div.innerHTML = `<div class="card-image acbpcimg hide-on-small-only"><img src="${comments.user.avatar_url}" class="acbpcimg2"></div><div class="card-stacked"><div class="card-content"><div style="display:flex;align-items:center;margin-bottom:0.5em;"><img src="${comments.user.avatar_url}" class="acbpcimg2 hide-on-med-and-up circle"><p class="acbpcdate"><b class="acbpcname">${comments.user.login}</b> - ${comments.created_at} <a href="${comments.html_url}" target="_blank">&#9656;</a></p></div><p>${comments.body}</p></div></div>`
+        } else {
+            div.className = `card horizontal grey lighten-2 acrounded acbpcomments`
+            div.innerHTML = `<div class="card-image acbpcimg hide-on-small-only"><img src="${comments.user.avatar_url}" class="acbpcimg2"></div><div class="card-stacked"><div class="card-content"><div style="display:flex;align-items:center;margin-bottom:0.5em;"><img src="${comments.user.avatar_url}" class="acbpcimg2 hide-on-med-and-up circle"><p class="acbpcdate"><b class="acbpcname">${comments.user.login}</b> - ${comments.created_at} <a href="${comments.html_url}" target="_blank">(edited) &#9656;</a></p></div><p>${comments.body.replace(/<[^>]*>?/gm, '')}</p></div></div>`
+        } 
+        append(commentsapi, div);
+        })
+    })
+    .catch(function(error) {
+        console.log(error);
+    });
+</script>

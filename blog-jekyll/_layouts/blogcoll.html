@@ -1,0 +1,56 @@
+---
+layout: default
+---
+
+<style>
+    #status2 ul {
+        display: flex;
+    }
+    #status2 li {
+        display:inline;
+    }
+    .acposttext {
+        padding-top: 1em;
+    }
+    .acposttime {
+        font-family: "Actor" !important;
+    }
+    .acposttitle, .acpostlink {
+        font-family: "Actor" !important;
+    }
+    .acpostlink {
+        padding-top:1em;
+        color: blueviolet !important;
+        text-align: right;
+        font-weight: 600;
+    }
+    .acposttext {
+        font-family: "Oxygen" !important;
+    }
+    .acposttitle {
+        font-weight: 600 !important;
+    }
+</style>
+
+<div style="padding-bottom:65px"></div>
+
+<div class="card-content black-text hide-on-med-and-down" style="height:65px;width:fit-content;margin-left:auto;margin-right:auto;">
+    <div id="status2" style="width:100%;"></div>
+</div>
+
+<div class="container">
+    {% for post in site.posts %}
+        <a href="{{ post.url }}">
+            <div class="card grey lighten-5 acrounded">
+                <div class="card-content black-text">
+                    <span class="card-title acposttitle">{{ post.title }}</span>
+                    <span class="acposttime grey-text text-darken-2">{{ post.date | date: '%B %d, %Y' }}</span>
+                    <p class="acposttext">{{ post.content | markdownify | strip_html | truncatewords: 40 }}</p>
+                    <p class="acpostlink">Read Now</p>
+                </div>
+            </div>
+        </a>
+    {% endfor %}
+</div>
+
+<title>Arland Blog - Arland</title>

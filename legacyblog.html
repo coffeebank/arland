@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head oncontextmenu="return false;">
+    <!--Import Google Icons and Fonts-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+    <meta name="theme-color" content="#414141"> 
+    
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-88021769-3"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-88021769-3');
+    </script>
+    
+    <!-- Custom CSS -->
+    <link type="text/css" rel="stylesheet" href="main.css" />
+    <title>Arland - Minecraft Bedrock Server</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" href="media/faviconhd.ico" />
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    
+    <!-- More custom css -->
+    <style>
+    </style>
+    
+    <script>  
+        $(function(){
+          $("#footer").load("assets/footer.html"); 
+          $("#status").load("status.html"); 
+        });
+    </script>
+
+    <!-- github has https
+    <script>
+        var loc = window.location.href+'';
+        if (loc.indexOf('http://')==0){
+            window.location.href = loc.replace('http://','https://');
+        }
+    </script> -->
+
+    <script>
+        function absorbEvent_(event) {
+          var e = event || window.event;
+          e.preventDefault && e.preventDefault();
+          e.stopPropagation && e.stopPropagation();
+          e.cancelBubble = true;
+          e.returnValue = false;
+          return false;
+        }
+
+        function preventLongPressMenu(node) {
+          node.ontouchstart = absorbEvent_;
+          node.ontouchmove = absorbEvent_;
+          node.ontouchend = absorbEvent_;
+          node.ontouchcancel = absorbEvent_;
+        }
+
+        function init() {
+          preventLongPressMenu(document.getElementByTagName('slide-out'));
+        }
+    </script>
+    
+    <ul id="slide-out" class="side-nav fixed">
+<li><div class="user-view">
+    <div class="background">
+    <img src="media/wallpaper.png">
+    </div>
+    <a href="index.html"><img class="circle" src="media/sc-05.png"></a>
+    <a href="index.html"><span class="white-text name" style="padding-top:10px">Arland</span></a>
+    <a href="index.html"><span class="white-text email">Minecraft Bedrock Server</span></a>
+    </div></li>
+<li><a class="waves-effect" href="index.html#play"><i class="material-icons">gamepad</i>Play Now</a></li>
+<li><a class="waves-effect" href="index.html#discord"><i class="material-icons">chat</i>Join our Discord</a></li>
+<li><a class="waves-effect" href="index.html#download"><i class="material-icons">devices</i>What is Bedrock?</a></li>
+        
+        <li><div class="divider"></div></li>
+        <li><a class="subheader">More</a></li>
+        <li><a class="waves-effect" href="blog.html"><i class="material-icons">local_library</i>Legacy Blog</a></li>
+        <li><a class="waves-effect" href="about.html"><i class="material-icons">info_outline</i>About</a></li>
+    </ul>
+    
+</head>
+<body oncontextmenu="return false;">
+    
+    <div style="background-color:#414141;position:fixed;width:100%;">
+     <nav class="grey darken-3">
+         <div class="nav-wrapper">
+
+             <div class="show-on-med-and-down">
+                 <div class="paddpc" id="hover">
+                     <a href="#" data-activates="slide-out" class="button-collapse waves-effect"><i class="material-icons">menu</i></a>
+                 </div>
+                 <script>  // Initialize collapse button
+                     $(".button-collapse").sideNav();
+                     // Initialize collapsible (uncomment the line below if you use the dropdown variation)
+                     $('.collapsible').collapsible();
+                 </script>
+             </div>
+
+           <a id="stn" href="#nav" class="brand-logo hide-on-med-and-down" style="padding-left:15px;padding-right:15px;font-size:21px">Legacy Blog</a>
+           <a href="blog.html"><div id="status"></div></a>
+
+         </div>
+     </nav>
+    </div>
+    
+    <iframe src="https://arlandserver.weebly.com/blogframe" width="100%" frameborder="0" style="height: 100vh; z-index:-1;"></iframe>
+    
+</body>
+</html>
