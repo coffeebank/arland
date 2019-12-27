@@ -15,7 +15,7 @@ You get:
 
 The Arcraft Launcher is free for everyone! Download the Arcraft Launcher here:
 
-<a class="waves-effect waves-light btn-large" href="https://gitnisyl.github.io/arland/arlandw/download.html" target="_blank">Download Now!</a>
+<a class="waves-effect waves-light btn-large" href="../arlandw2/download" target="_blank">Download Now!</a>
 
 
 Sincerely,  

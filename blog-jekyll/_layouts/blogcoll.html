@@ -40,7 +40,7 @@ layout: default
 
 <div class="container">
     {% for post in site.posts %}
-        <a href="{{ post.url }}">
+        <a href="{{ post.url | remove_first: "/" }}">
             <div class="card grey lighten-5 acrounded">
                 <div class="card-content black-text">
                     <span class="card-title acposttitle">{{ post.title }}</span>

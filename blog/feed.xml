@@ -1,7 +1,65 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/blog/" rel="alternate" type="text/html" /><updated>2019-12-26T22:41:35-08:00</updated><id>http://localhost:4000/blog/feed.xml</id><title type="html">Arland Blog</title><subtitle>Arland is a Minecraft server run in a small group format, within a tightknit community of players. Start playing today!</subtitle><entry><title type="html">Thanksgiving Update</title><link href="http://localhost:4000/blog/2016/arland-thanksgiving-update.html" rel="alternate" type="text/html" title="Thanksgiving Update" /><published>2016-11-24T04:00:00-08:00</published><updated>2016-11-24T04:00:00-08:00</updated><id>http://localhost:4000/blog/2016/arland-thanksgiving-update</id><content type="html" xml:base="http://localhost:4000/blog/2016/arland-thanksgiving-update.html">&lt;iframe src=&quot;../../arlandw2/blog/arland-thanksgiving-update.html&quot; width=&quot;100%&quot; height=&quot;1460px&quot; style=&quot;border:0;&quot; title=&quot;Arland Thanksgiving Update&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/blog/" rel="alternate" type="text/html" /><updated>2019-12-26T23:16:03-08:00</updated><id>http://localhost:4000/blog/feed.xml</id><title type="html">Arland Blog</title><subtitle>Arland is a Minecraft server run in a small group format, within a tightknit community of players. Start playing today!</subtitle><entry><title type="html">Server Updates</title><link href="http://localhost:4000/blog/20161219-server-updates.html" rel="alternate" type="text/html" title="Server Updates" /><published>2016-12-19T04:00:00-08:00</published><updated>2016-12-19T04:00:00-08:00</updated><id>http://localhost:4000/blog/server-updates</id><content type="html" xml:base="http://localhost:4000/blog/20161219-server-updates.html">&lt;p&gt;Hello Arlanders,&lt;/p&gt;
+
+&lt;p&gt;Here is a quick update on the server status recently:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Arland &lt;del&gt;Lite&lt;/del&gt; is back up!&lt;/strong&gt;&lt;br /&gt;
+Our Arland &lt;del&gt;Lite&lt;/del&gt; server has been down for server upgrades for a while, but it is now back up!&lt;br /&gt;
+IP: &lt;em class=&quot;underline&quot;&gt;play.arland.me&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Here are some new quick links for added convenience:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;​Arland Website&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&quot;../../index&quot;&gt;site.arland.me&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Download Arland&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&quot;../../arlandw/download&quot;&gt;site.arland.me/download&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Join our Staff!&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&quot;../../arlandw/download&quot;&gt;site.arland.me/staff-app&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;​Apply to Arland&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&quot;&quot;&gt;site.arland.me/apply&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Arland Blog&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&quot;&quot;&gt;site.arland.me/blog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Donate to Arland&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&quot;&quot;&gt;site.arland.me/donate&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Hello Arlanders,</summary></entry><entry><title type="html">Website Updates</title><link href="http://localhost:4000/blog/20161215-website-updates.html" rel="alternate" type="text/html" title="Website Updates" /><published>2016-12-15T04:00:00-08:00</published><updated>2016-12-15T04:00:00-08:00</updated><id>http://localhost:4000/blog/website-updates</id><content type="html" xml:base="http://localhost:4000/blog/20161215-website-updates.html">&lt;p&gt;There have been a few updates to the Arland site that we would like to announce.&lt;/p&gt;
+
+&lt;p&gt;The following has changed:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;New Website Layout&lt;/strong&gt;&lt;br /&gt;
+The website redesign is now complete!&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Snow!!&lt;/strong&gt;&lt;br /&gt;
+A holiday special ;)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Donate Page&lt;/strong&gt;&lt;br /&gt;
+New “Contributors” section has been added!&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Contact Us&lt;/strong&gt;&lt;br /&gt;
+New contact form with nicer layout. Also faster replies!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Our staff is working hard to make sure you can start playing Arland without any problems. If you do have anything you want to tell us, send a message to us &lt;a href=&quot;../arlandw/contact.html&quot;&gt;with our new Contact Form&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;Thanks for playing,&lt;br /&gt;
+​@fredpaletto&lt;/p&gt;</content><author><name></name></author><summary type="html">There have been a few updates to the Arland site that we would like to announce.</summary></entry><entry><title type="html">Server Updates</title><link href="http://localhost:4000/blog/20161126-server-updates.html" rel="alternate" type="text/html" title="Server Updates" /><published>2016-11-26T04:00:00-08:00</published><updated>2016-11-26T04:00:00-08:00</updated><id>http://localhost:4000/blog/server-updates</id><content type="html" xml:base="http://localhost:4000/blog/20161126-server-updates.html">&lt;p&gt;There will be a major change to Arland servers effective immediately.&lt;/p&gt;
+
+&lt;p&gt;The following has changed:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Maximum players online at any time increased&lt;/strong&gt;&lt;br /&gt;
+(16 -&amp;gt; 32)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Switched to faster servers&lt;/strong&gt;&lt;br /&gt;
+(1.5GB -&amp;gt; 2GB RAM)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We have decided to improve our server with these changes for the upcoming holiday season. Depending on the amount of donations we receive, we may make our server even better and increase server capacity!
+As usual, if you have any questions, &lt;a href=&quot;../arlandw2/contact-us.html&quot;&gt;feel free to ask us with our Contact form here&lt;/a&gt;, or if you would like even more features, &lt;a href=&quot;../arlandw2/request-features.html&quot;&gt;give us some ideas here&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;Thanks for playing,&lt;br /&gt;
+​@fredpaletto&lt;/p&gt;</content><author><name></name></author><summary type="html">There will be a major change to Arland servers effective immediately.</summary></entry><entry><title type="html">Thanksgiving Update</title><link href="http://localhost:4000/blog/20161124-arland-thanksgiving-update.html" rel="alternate" type="text/html" title="Thanksgiving Update" /><published>2016-11-24T04:00:00-08:00</published><updated>2016-11-24T04:00:00-08:00</updated><id>http://localhost:4000/blog/arland-thanksgiving-update</id><content type="html" xml:base="http://localhost:4000/blog/20161124-arland-thanksgiving-update.html">&lt;iframe src=&quot;../arlandw2/blog/arland-thanksgiving-update.html&quot; width=&quot;100%&quot; height=&quot;1460px&quot; style=&quot;border:0;&quot; title=&quot;Arland Thanksgiving Update&quot;&gt;
 
 Arland Thanksgiving Update
-&lt;/iframe&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">New Arcraft Launcher!</title><link href="http://localhost:4000/blog/2016/new-arcraft-launcher.html" rel="alternate" type="text/html" title="New Arcraft Launcher!" /><published>2016-11-22T04:00:00-08:00</published><updated>2016-11-22T04:00:00-08:00</updated><id>http://localhost:4000/blog/2016/new-arcraft-launcher</id><content type="html" xml:base="http://localhost:4000/blog/2016/new-arcraft-launcher.html">&lt;p&gt;We are happy to announce that we now have our own Arcraft Launcher!&lt;/p&gt;
+&lt;/iframe&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">New Arcraft Launcher!</title><link href="http://localhost:4000/blog/20161122-new-arcraft-launcher.html" rel="alternate" type="text/html" title="New Arcraft Launcher!" /><published>2016-11-22T04:00:00-08:00</published><updated>2016-11-22T04:00:00-08:00</updated><id>http://localhost:4000/blog/new-arcraft-launcher</id><content type="html" xml:base="http://localhost:4000/blog/20161122-new-arcraft-launcher.html">&lt;p&gt;We are happy to announce that we now have our own Arcraft Launcher!&lt;/p&gt;
 
 &lt;p&gt;Running Arland via the Arcraft Launcher gives you access to even more features than playing via Minecraft Multiplayer.&lt;/p&gt;
 
@@ -14,10 +72,10 @@ Arland Thanksgiving Update
 
 &lt;p&gt;The Arcraft Launcher is free for everyone! Download the Arcraft Launcher here:&lt;/p&gt;
 
-&lt;p&gt;&lt;a class=&quot;waves-effect waves-light btn-large&quot; href=&quot;https://gitnisyl.github.io/arland/arlandw/download.html&quot; target=&quot;_blank&quot;&gt;Download Now!&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;waves-effect waves-light btn-large&quot; href=&quot;../arlandw2/download&quot; target=&quot;_blank&quot;&gt;Download Now!&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Sincerely,&lt;br /&gt;
-fredpaletto&lt;/p&gt;</content><author><name></name></author><summary type="html">We are happy to announce that we now have our own Arcraft Launcher!</summary></entry><entry><title type="html">Server Updates</title><link href="http://localhost:4000/blog/2016/server-updates.html" rel="alternate" type="text/html" title="Server Updates" /><published>2016-10-16T05:00:00-07:00</published><updated>2016-10-16T05:00:00-07:00</updated><id>http://localhost:4000/blog/2016/server-updates</id><content type="html" xml:base="http://localhost:4000/blog/2016/server-updates.html">&lt;p&gt;There will be a major change to Arland servers effective immediately.&lt;/p&gt;
+fredpaletto&lt;/p&gt;</content><author><name></name></author><summary type="html">We are happy to announce that we now have our own Arcraft Launcher!</summary></entry><entry><title type="html">Server Updates</title><link href="http://localhost:4000/blog/20161016-server-updates.html" rel="alternate" type="text/html" title="Server Updates" /><published>2016-10-16T05:00:00-07:00</published><updated>2016-10-16T05:00:00-07:00</updated><id>http://localhost:4000/blog/server-updates</id><content type="html" xml:base="http://localhost:4000/blog/20161016-server-updates.html">&lt;p&gt;There will be a major change to Arland servers effective immediately.&lt;/p&gt;
 
 &lt;p&gt;The following has changed:&lt;/p&gt;
 
@@ -41,7 +99,7 @@ fredpaletto&lt;/p&gt;</content><author><name></name></author><summary type="html
 &lt;p&gt;If you have any questions or concerns about any of the changes, feel free to contact us anytime via our contact form here. We apologize for any inconveniences this may have caused, and we hope you continue to enjoy Arland.&lt;/p&gt;
 
 &lt;p&gt;Sincerely,&lt;br /&gt;
-fredpaletto&lt;/p&gt;</content><author><name></name></author><summary type="html">There will be a major change to Arland servers effective immediately.</summary></entry><entry><title type="html">New! - Arland Blog</title><link href="http://localhost:4000/blog/2016/new-arland-blog.html" rel="alternate" type="text/html" title="New! - Arland Blog" /><published>2016-10-15T05:00:00-07:00</published><updated>2016-10-15T05:00:00-07:00</updated><id>http://localhost:4000/blog/2016/new-arland-blog</id><content type="html" xml:base="http://localhost:4000/blog/2016/new-arland-blog.html">&lt;p&gt;This blog will be used to keep the general public up-to-date with the status of Arland and any major changes that will occur relating to Arland.&lt;/p&gt;
+fredpaletto&lt;/p&gt;</content><author><name></name></author><summary type="html">There will be a major change to Arland servers effective immediately.</summary></entry><entry><title type="html">New! - Arland Blog</title><link href="http://localhost:4000/blog/20161015-new-arland-blog.html" rel="alternate" type="text/html" title="New! - Arland Blog" /><published>2016-10-15T05:00:00-07:00</published><updated>2016-10-15T05:00:00-07:00</updated><id>http://localhost:4000/blog/new-arland-blog</id><content type="html" xml:base="http://localhost:4000/blog/20161015-new-arland-blog.html">&lt;p&gt;This blog will be used to keep the general public up-to-date with the status of Arland and any major changes that will occur relating to Arland.&lt;/p&gt;
 
 &lt;p&gt;To check up on the status of Arland at any time, simply visit the following website:&lt;/p&gt;
 

@@ -25,7 +25,7 @@ baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "https://gitnisyl.github.io/arland" # the base hostname & protocol for your site, e.g. http://example.com
 feed:
   path: /feed.xml
-permalink: /:year/:title:output_ext
+permalink: /:year:month:day-:title:output_ext
 
 
 suburlcompat: /
