@@ -28,8 +28,8 @@ feed:
 permalink: /:year:month:day-:title:output_ext
 
 
-suburlcompat: /
-# suburlcompat: "/arland/" 
+# suburlcompat: /
+suburlcompat: "/arland/" 
 
 # Build settings
 theme: minima
