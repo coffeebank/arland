@@ -148,13 +148,21 @@
         margin-right: auto;
         font-family: "Oxygen";
     }
-    .acbpbody ul {
+    .acbpbody ul, .acbpbody ul {
         padding-left: 2em;
+        margin-bottom: 2em;
+    }
+    .acbpbody ol > li {
+        list-style-type: decimal !important;
+    }
+    .acbpbody ul {
         list-style-type: initial;
-        margin-bottom: 1.85em;
     }
     .acbpbody li {
         list-style-type: initial !important;
+    }
+    .acbpbody ul li ul {
+        margin-bottom: 0.65em;
     }
     .acbpbody strong {
         font-weight: bold;
@@ -176,9 +184,22 @@
     }
     .acbpcontent {
         padding: 2em !important;
+        font-family: "Cantarell";
+    }
+    .acbpcontent h3 {
+        font-size: 2em;
+        font-weight: bold;
+    }
+    .acbpcontent h4 {
+        font-size: 1.35em;
+        font-weight: bold;
+    }
+    .acbpcontent img {
+        max-width: 100%;
     }
     .acbpcontent p {
-        margin-bottom: 1.65em !important;
+        line-height: 1.85em !important;
+        margin-bottom: 2em !important;
     }
     .acbpccont {
         width: 80%;
@@ -218,7 +239,7 @@
         font-weight: 600;
     }
     .acbpdate {
-        font-size: 1em;
+        font-size: 1.15em;
     }
     .acbptitle {
         font-size: 2em;
@@ -274,10 +295,10 @@ Arland Thanksgiving Update
 
     <div class="acbpnextprev">
         
-            <a class="waves-effect waves-light btn teal lighten-2" style="margin-top:1em;margin-bottom:0.25em;" href="../20161122-new-arcraft-launcher.html">Previous Post</a>
+            <a class="waves-effect waves-light btn teal lighten-2" style="margin-top:1em;margin-bottom:0.25em;" href="20161122-new-arcraft-launcher.html">Previous Post</a>
         
         
-            <a class="waves-effect waves-light btn teal lighten-2" style="margin-top:1em;margin-bottom:0.25em;" href="../20161126-server-updates.html">Next Post</a>
+            <a class="waves-effect waves-light btn teal lighten-2" style="margin-top:1em;margin-bottom:0.25em;" href="20161126-server-updates.html">Next Post</a>
         
     </div>
 
@@ -342,6 +363,7 @@ Arland Thanksgiving Update
 </div>
     
 <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+<link href='https://fonts.googleapis.com/css?family=Cantarell:400,300,700&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
 <link href='https://fonts.googleapis.com/css?family=Actor:400,500,600&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
 </body>
 </html>

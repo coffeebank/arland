@@ -15,14 +15,14 @@ IP: *play.arland.me*{:.underline}
 Here are some new quick links for added convenience:
 
 - **​Arland Website**  
-[site.arland.me](../../index)
+[site.arland.me](../index)
 - **Download Arland**  
-[site.arland.me/download](../../arlandw/download)
+[site.arland.me/download](../arlandw/download)
 - **Join our Staff!**  
-[site.arland.me/staff-app](../../arlandw/download)
+[site.arland.me/staff-app](../arlandw/staff-app)
 - **​Apply to Arland**  
-[site.arland.me/apply]()
+[site.arland.me/apply](../arlandw2/apply)
 - **Arland Blog**  
-[site.arland.me/blog]()
+[site.arland.me/blog](index)
 - **Donate to Arland**  
-[site.arland.me/donate]()
+[site.arland.me/donate](../arlandw/donate)

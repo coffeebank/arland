@@ -39,7 +39,19 @@ layout: default
 </div>
 
 <div class="container">
-    {% for post in site.posts %}
+    {% for post in site.posts limit: 1 %}
+        <a href="{{ post.url | remove_first: "/" }}">
+            <div class="card grey lighten-5 acrounded">
+                <div class="card-content black-text">
+                    <span class="card-title acposttitle">{{ post.title }}<span class="new badge blue lighten-1"></span></span>
+                    <span class="acposttime grey-text text-darken-2">{{ post.date | date: '%B %d, %Y' }}</span>
+                    <p class="acposttext">{{ post.content | markdownify | strip_html | truncatewords: 40 }}</p>
+                    <p class="acpostlink">Read Now</p>
+                </div>
+            </div>
+        </a>
+    {% endfor %}
+    {% for post in site.posts offset: 1 %}
         <a href="{{ post.url | remove_first: "/" }}">
             <div class="card grey lighten-5 acrounded">
                 <div class="card-content black-text">
