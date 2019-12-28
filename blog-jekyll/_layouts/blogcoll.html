@@ -2,97 +2,302 @@
 layout: default
 ---
 
-<style>
-    #status2 ul {
-        display: flex;
-    }
-    #status2 li {
-        display:inline;
-    }
-    .acposttext {
-        padding-top: 1em;
-    }
-    .acposttime {
-        font-family: "Lato" !important;
-    }
-    .acposttitle, .acpostlink {
-        font-family: "Lato" !important;
-    }
-    .acpostlink {
-        /* padding-top:1em; */
-        color: blueviolet !important;
-        text-align: right;
-        font-weight: 600;
-    }
-    .acposttext {
-        font-family: "Lato" !important;
-        padding-bottom: 0.75em;
-    }
-    .acposttitle {
-        font-weight: 500 !important;
-    }
-    .acdatemorelist {
-        padding-top: 0.5em;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-        align-content: center;
-    }
-</style>
+<div class="arlandwcollhtml">
+    <meta http-equiv='cache-control' content='no-cache' />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link id="wsite-base-style" rel="stylesheet" type="text/css" href="arlandw/cdn2.editmysite.com/css/sites.css?buildTime=1562881596" />
+    <link rel="stylesheet" type="text/css" href="arlandw/cdn2.editmysite.com/css/old/fancybox.css?1562799101" />
+    <link rel="stylesheet" type="text/css" href="arlandw/cdn2.editmysite.com/css/social-icons.css?buildtime=1562799101" media="screen,projection" />
+    <link rel="stylesheet" type="text/css" href="arlandw/arlandserver.weebly.com/files/main_style.css?1562816177" title="wsite-theme-css" />
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,300,300italic,700,400italic,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+    <link href='https://fonts.googleapis.com/css?family=Cardo:400,700,400italic&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+    <link href='https://fonts.googleapis.com/css?family=Cantarell:400,700,400italic,700italic&subset=latin,latin-ext'
+        rel='stylesheet' type='text/css' />
+    <link href='https://fonts.googleapis.com/css?family=Cantarell:400,700,400italic,700italic&subset=latin,latin-ext'
+        rel='stylesheet' type='text/css' />
+    <link href='https://fonts.googleapis.com/css?family=Catamaran:400,300,200,700&subset=latin,latin-ext' rel='stylesheet'
+        type='text/css' />
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,300italic,700,400italic,700italic&subset=latin,latin-ext'
+        rel='stylesheet' type='text/css' />
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700&subset=latin,latin-ext' rel='stylesheet'
+        type='text/css' />
+    <link href='https://fonts.googleapis.com/css?family=Actor&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+    <style type='text/css'>
+        .wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph,
+        .wsite-elements.wsite-not-footer:not(.wsite-header-elements) p,
+        .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-block .product-title,
+        .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-description,
+        .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label,
+        .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label,
+        #wsite-content div.paragraph,
+        #wsite-content p,
+        #wsite-content .product-block .product-title,
+        #wsite-content .product-description,
+        #wsite-content .wsite-form-field label,
+        #wsite-content .wsite-form-field label,
+        .blog-sidebar div.paragraph,
+        .blog-sidebar p,
+        .blog-sidebar .wsite-form-field label,
+        .blog-sidebar .wsite-form-field label {
+            font-family: "Cantarell" !important;
+            text-transform: none !important;
+        }
 
-<div style="padding-bottom:65px"></div>
+        #wsite-content div.paragraph,
+        #wsite-content p,
+        #wsite-content .product-block .product-title,
+        #wsite-content .product-description,
+        #wsite-content .wsite-form-field label,
+        #wsite-content .wsite-form-field label,
+        .blog-sidebar div.paragraph,
+        .blog-sidebar p,
+        .blog-sidebar .wsite-form-field label,
+        .blog-sidebar .wsite-form-field label {
+            color: #252525 !important;
+        }
 
-<div class="card-content black-text hide-on-med-and-down" style="height:65px;width:fit-content;margin-left:auto;margin-right:auto;">
-    <div id="status2" style="width:100%;"></div>
-</div>
+        .wsite-elements.wsite-not-footer:not(.wsite-header-elements) h2,
+        .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-long .product-title,
+        .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-large .product-title,
+        .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-small .product-title,
+        #wsite-content h2,
+        #wsite-content .product-long .product-title,
+        #wsite-content .product-large .product-title,
+        #wsite-content .product-small .product-title,
+        .blog-sidebar h2 {
+            font-family: "Cantarell" !important;
+            text-transform: uppercase !important;
+            letter-spacing: 1px !important;
+        }
 
-<div style="width:90%;margin-left:auto;margin-right:auto;">
-    {% for post in site.posts limit: 1 %}
-        <a href="{{ post.url | remove_first: "/" }}">
-            <div class="card grey lighten-5">
-                <div class="card-content black-text">
-                    <span class="card-title acposttitle">{{ post.title }}<span class="new badge blue lighten-1"></span></span>
-                    <p class="acposttext">{{ post.content | markdownify | strip_html | truncatewords: 28 }}</p>
-                    <div class="acdatemorelist">
-                        <p class="acposttime grey-text text-darken-2">{{ post.date | date: '%B %d, %Y' }}</p>
-                        <p class="acpostlink">Read Now</p>
+        #wsite-content h2,
+        #wsite-content .product-long .product-title,
+        #wsite-content .product-large .product-title,
+        #wsite-content .product-small .product-title,
+        .blog-sidebar h2 {
+            color: #a9a9a9 !important;
+        }
+
+        #wsite-title {
+            font-weight: 700 !important;
+            letter-spacing: 4px !important;
+        }
+
+        .wsite-headline,
+        .wsite-header-section .wsite-content-title {
+            font-family: "Catamaran" !important;
+            text-transform: uppercase !important;
+            letter-spacing: 5px !important;
+        }
+
+        .wsite-headline-paragraph,
+        .wsite-header-section .paragraph {
+            font-family: "Lato" !important;
+            font-weight: 300 !important;
+        }
+
+        .wsite-button-inner {
+            font-family: "Oxygen" !important;
+        }
+
+        .blog-header h2 a {
+            font-family: "Actor" !important;
+            font-style: normal !important;
+            text-transform: none !important;
+        }
+
+        @media screen and (min-width: 767px) {
+
+            .wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph,
+            .wsite-elements.wsite-not-footer:not(.wsite-header-elements) p,
+            .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-block .product-title,
+            .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-description,
+            .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label,
+            .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label,
+            #wsite-content div.paragraph,
+            #wsite-content p,
+            #wsite-content .product-block .product-title,
+            #wsite-content .product-description,
+            #wsite-content .wsite-form-field label,
+            #wsite-content .wsite-form-field label,
+            .blog-sidebar div.paragraph,
+            .blog-sidebar p,
+            .blog-sidebar .wsite-form-field label,
+            .blog-sidebar .wsite-form-field label {
+                font-size: 20px !important;
+                line-height: 23px !important;
+            }
+
+            #wsite-title {
+                font-size: 18px !important;
+            }
+
+            .wsite-headline,
+            .wsite-header-section .wsite-content-title {
+                font-size: 43px !important;
+            }
+
+            .blog-header h2 a {
+                font-size: 26px !important;
+                line-height: 22px !important;
+            }
+        }
+    </style>
+
+    <!-- custom css -->
+    {% include arlandwcss.html %}
+
+    <script src='arlandw/ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+    <script type="text/javascript" src="arlandw/cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1562799101&"></script>
+    <script src="arlandw/cdn2.editmysite.com/js/site/main.js?buildTime=1562881596"></script>
+    <script type="text/javascript"> _W = _W || {}; _W.securePrefix = 'arlandserver.weebly.com'; </script>
+    <script>_W = _W || {};
+        _W.customerLocale = "en_US";
+        _W.storeName = null;
+        _W.storeCountry = "US";
+        _W.storeCurrency = "USD";
+        _W.storeEuPrivacyPolicyUrl = "";
+        com_currentSite = "994054929792683980";
+        com_userID = "24610873";</script>
+    <script type="text/javascript">_W.configDomain = "www.weebly.com";</script>
+    <script>_W.relinquish && _W.relinquish()</script>
+    <script type="text/javascript" src="arlandw/cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1562881596&"></script>
+    <script> _W.themePlugins = { "navpane": { "condense": 1024, "forced": 1 } };</script>
+    <script src='arlandw/cdn2.editmysite.com/js/site/theme-plugins.js?buildTime=1562881596'></script>
+
+<body class="no-header-page  wsite-page-blogframe wsite-blog-index  wsite-theme-light" style="background:#fff">
+    <div class="main-wrap">
+        <div class="wsite-section-content">
+            <div class="container">
+                <a class="wsite-button wsite-button-large wsite-button-highlight">
+                    <span class="wsite-button-inner">&#60;&ensp;Back</span>
+                </a>
+                <div style="margin-top:50px">
+                    <div class="wsite-elements wsite-not-footer">
+                        <table id="blogTable" class="wsite-not-footer"
+                            style="border: 0; width: 100%; table-layout: fixed">
+                            <tr>
+
+                                <td valign="top">
+                                    <div id="304473453308661729-blog" class="blog-body" style="float: left;">
+                                        <div id="wsite-content">
+
+                                            {% for post in site.posts limit: 4 %}
+                                                <div class="blog-post">
+                                                    <div class="blog-header">
+                                                        <p class="blog-date">
+                                                            <span class="date-text">
+                                                                {{ post.date | date: '%-m/%-d/%Y' }}
+                                                            </span>
+
+                                                        </p>
+                                                        <h2 class="blog-title">
+                                                            <a class="blog-title-link blog-link"
+                                                                href="{{ post.url | remove_first: '/' }}">{{ post.title }}</a>
+
+                                                        </h2>
+                                                        <p class="blog-comments">
+                                                            <a href="{{ post.url | remove_first: '/' }}"
+                                                                class="blog-link">Comments</a>
+
+                                                        </p>
+
+                                                        <a href="{{ post.url | remove_first: '/' }}" class="read-now-toggle"><span>Read Now</span></a>
+
+                                                        <div class="blog-separator">&nbsp;</div>
+                                                    </div>
+
+                                                    <div class="blog-content">
+                                                        <div class="paragraph acawparagraph">
+                                                            {{ post.content | markdownify | strip_html | truncatewords: 120 }}
+                                                        </div>
+
+                                                        <div class="blog-comments-bottom">
+                                                            <a href="{{ post.url | remove_first: '/' }}"
+                                                                class="blog-link">Comments</a>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="blog-post-separator"></div>
+                                                </div>
+                                            {% endfor %}
+
+                                            <div class="blog-page-nav-previous">
+                                                <a onclick="var delayInMS = 700;document.getElementById('showpostsclicker').style.display='none';setTimeout(function() {document.getElementById('showpage2').style.display='block'}, delayInMS);" id="showpostsclicker" style="cursor:pointer;display:block;" class="blog-link">&lt;&lt;Previous</a>
+                                            </div>
+
+                                            <div id="showpage2" style="display:none;">
+                                                {% for post in site.posts offset: 4 %}
+                                                    <div class="blog-post">
+                                                        <div class="blog-header">
+                                                            <p class="blog-date">
+                                                                <span class="date-text">
+                                                                    {{ post.date | date: '%-m/%-d/%Y' }}
+                                                                </span>
+    
+                                                            </p>
+                                                            <h2 class="blog-title">
+                                                                <a class="blog-title-link blog-link"
+                                                                    href="{{ post.url | remove_first: '/' }}">{{ post.title }}</a>
+    
+                                                            </h2>
+                                                            <p class="blog-comments">
+                                                                <a href="{{ post.url | remove_first: '/' }}"
+                                                                    class="blog-link">Comments</a>
+    
+                                                            </p>
+    
+                                                            <a href="{{ post.url | remove_first: '/' }}" class="read-now-toggle"><span>Read Now</span></a>
+    
+                                                            <div class="blog-separator">&nbsp;</div>
+                                                        </div>
+    
+                                                        <div class="blog-content">
+                                                            <div class="paragraph acawparagraph">
+                                                                {{ post.content | markdownify | strip_html | truncatewords: 120 }}
+                                                            </div>
+    
+                                                            <div class="blog-comments-bottom">
+                                                                <a href="//arlandserver.weebly.com/blogframe/arland-updates-project-evergreen-and-beyond#comments"
+                                                                    class="blog-link">Comments</a>
+                                                            </div>
+    
+                                                        </div>
+    
+                                                        <div class="blog-post-separator"></div>
+                                                    </div>
+                                                {% endfor %}
+                                            </div>
+
+                                            <!-- bid: $blog_id -->
+                                        </div>
+                                    </div>
+
+                                </td>
+
+                            </tr>
+                        </table>
+
                     </div>
                 </div>
             </div>
-        </a>
-    {% endfor %}
-    {% for post in site.posts offset: 1 limit: 3 %}
-        <a href="{{ post.url | remove_first: "/" }}">
-            <div class="card grey lighten-5">
-                <div class="card-content black-text">
-                    <span class="card-title acposttitle">{{ post.title }}</span>
-                    <p class="acposttext">{{ post.content | markdownify | strip_html | truncatewords: 28 }}</p>
-                    <div class="acdatemorelist">
-                        <p class="acposttime grey-text text-darken-2">{{ post.date | date: '%B %d, %Y' }}</p>
-                        <p class="acpostlink">Read Now</p>
-                    </div>
-                </div>
-            </div>
-        </a>
-    {% endfor %}
-    <a onclick="var delayInMS = 700;document.getElementById('showpostsclicker').style.display='none';setTimeout(function() {document.getElementById('showpage2').style.display='block'}, delayInMS);" id="showpostsclicker" style="cursor:pointer;display:block;margin-top:2em;">Load more posts...</a>
-    <div id="showpage2" style="display:none;">
-        {% for post in site.posts offset: 4 %}
-            <a href="{{ post.url | remove_first: "/" }}">
-                <div class="card grey lighten-5">
-                    <div class="card-content black-text">
-                        <span class="card-title acposttitle">{{ post.title }}</span>
-                        <p class="acposttext">{{ post.content | markdownify | strip_html | truncatewords: 28 }}</p>
-                        <div class="acdatemorelist">
-                            <p class="acposttime grey-text text-darken-2">{{ post.date | date: '%B %d, %Y' }}</p>
-                            <p class="acpostlink">Read Now</p>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        {% endfor %}
+        </div>
     </div>
-</div>
 
-<title>Arland Blog - Arland</title>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+    <script type="text/javascript" src="arlandw/arlandserver.weebly.com/files/theme/plugins.js"></script>
+    <script type="text/javascript" src="arlandw/arlandserver.weebly.com/files/theme/custom.js"></script>
+    <script>
+        window._W.isEUUser = false;
+        window._W.showCookieToAll = "";
+    </script>
+    <link type="text/css" rel="stylesheet" href="{{ site.suburlcompat }}main.css" />
+</body>
+
+</div>

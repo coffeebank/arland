@@ -36,6 +36,9 @@
         .btn-large, .card {
             z-index: 1 !important;
         }
+        .arlandwcollhtml, .arlandwposthtml {
+            width: 100%;
+        }
         .acmargint {
             margin-top: 1em;
         }
@@ -130,16 +133,17 @@
                 </script>
             </div>
 
-            {% if page.layout == 'blogcoll' %}
+            {% if page.layout == 'blogcoll' or page.layout == 'arlandwcoll' %}
                 <a id="stn" href="{{ site.suburlcompat }}blog/index" class="brand-logo hide-on-med-and-down" style="padding-left:15px;padding-right:15px;font-size:21px">Blog</a>
                 <div id="status"></div>
             {% else %}
-                <a id="stn" href="{{ site.suburlcompat }}blog/index" class="brand-logo hide-on-med-and-down" style="padding-left:15px;padding-right:15px;font-size:21px"><i class="material-icons left">keyboard_arrow_left</i></a>
-                <a id="stn" href="{{ site.suburlcompat }}blog/index" class="brand-logo hide-on-med-and-down" style="padding-left:15px;padding-right:15px;margin-left:50px;font-size:21px">Blog</a>
+                <!-- <a id="stn" href="{{ site.suburlcompat }}blog/index" class="brand-logo hide-on-med-and-down" style="padding-left:15px;padding-right:15px;font-size:21px"><i class="material-icons left">keyboard_arrow_left</i></a>
+                <a id="stn" href="{{ site.suburlcompat }}blog/index" class="brand-logo hide-on-med-and-down" style="padding-left:15px;padding-right:15px;margin-left:50px;font-size:21px">Blog</a> -->
+                <a id="stn" href="{{ site.suburlcompat }}blog/index" class="brand-logo hide-on-med-and-down" style="padding-left:15px;padding-right:15px;font-size:21px">Blog</a>
                 <div id="status"></div>
             {% endif %}
 
-         </div></div>>
+         </div>
      </nav>
     </div>
 

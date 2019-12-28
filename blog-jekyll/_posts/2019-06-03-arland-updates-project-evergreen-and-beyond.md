@@ -16,7 +16,7 @@ All changes listed below will affect all Arland players, effective immediately.
 We are migrating away from [arland.pythonanywhere.com](../) and into Github as our domain in order to help streamline website updates and allow quicker information access. Website redirects will remain in place for 6 months, effective today, to help our users transition.  
 
 
-- **Progressive Web App capabilities have been updated**
+- **Progressive Web App capabilities have been updated**  
 The new Arland PWA is now fully offline-capable, supports HTTPS/SSL by default, and offers a slick new install experience for your homescreen!  
 
 

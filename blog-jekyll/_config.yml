@@ -36,6 +36,11 @@ theme: minima
 plugins:
   - jekyll-feed
 
+# Collections
+collections:
+  arlandw:
+    output: true
+
 destination: ../blog
 
 # Exclude from processing.
