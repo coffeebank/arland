@@ -531,8 +531,7 @@ New contact form with nicer layout. Also faster replies!</li>
                                                                     <a class="waves-effect waves-light btn cyan darken-1" style="margin-top:1em;margin-bottom:0.25em;" href="https://github.com/gitnisyl/arland/issues/5" target="_blank"><i class="material-icons">chat</i></a>
                                                                 </div>
                                                             </div>
-                                                            <a onclick="var delayInMS = 700;document.getElementById('showcommentsclicker').style.display='none';setTimeout(function() {document.getElementById('showcomments').style.display='block'}, delayInMS);" id="showcommentsclicker" style="cursor:pointer;display:block;margin-top:2em;">Load Comments...</a>
-                                                            <div id="showcomments" style="display:none;">
+                                                            <div id="showcomments">
                                                                 <div id="ghcomments"></div>
                                                             </div>
                                                         </div>
@@ -554,10 +553,10 @@ New contact form with nicer layout. Also faster replies!</li>
                                                                 let div = createNode('div');
                                                                 if (comments.created_at == comments.updated_at){
                                                                     div.className = `card horizontal grey lighten-2 acrounded acbpcomments`
-                                                                    div.innerHTML = `<div class="card-image acbpcimg hide-on-small-only"><img src="${comments.user.avatar_url}" class="acbpcimg2"></div><div class="card-stacked"><div class="card-content"><div style="display:flex;align-items:center;margin-bottom:0.5em;"><p class="acbpcdate"><b class="acbpcname">${comments.user.login}</b> - ${comments.created_at} <a href="${comments.html_url}" target="_blank">&#9656;</a></p></div><p>${comments.body}</p></div></div>`
+                                                                    div.innerHTML = `<div class="card-image acbpcimg hide-on-small-only"><div class="card-content"><div style="display:flex;align-items:center;margin-bottom:0.5em;"><p class="acbpcdate"><b class="acbpcname">${comments.user.login}</b> - ${comments.created_at} <a href="${comments.html_url}" target="_blank">&#9656;</a></p></div><p>${comments.body}</p></div></div>`
                                                                 } else {
                                                                     div.className = `card horizontal grey lighten-2 acrounded acbpcomments`
-                                                                    div.innerHTML = `<div class="card-image acbpcimg hide-on-small-only"><img src="${comments.user.avatar_url}" class="acbpcimg2"></div><div class="card-stacked"><div class="card-content"><div style="display:flex;align-items:center;margin-bottom:0.5em;"><p class="acbpcdate"><b class="acbpcname">${comments.user.login}</b> - ${comments.created_at} <a href="${comments.html_url}" target="_blank">(edited) &#9656;</a></p></div><p>${comments.body.replace(/<[^>]*>?/gm, '')}</p></div></div>`
+                                                                    div.innerHTML = `<div class="card-image acbpcimg hide-on-small-only"><div class="card-content"><div style="display:flex;align-items:center;margin-bottom:0.5em;"><p class="acbpcdate"><b class="acbpcname">${comments.user.login}</b> - ${comments.created_at} <a href="${comments.html_url}" target="_blank">(edited) &#9656;</a></p></div><p>${comments.body.replace(/<[^>]*>?/gm, '')}</p></div></div>`
                                                                 } 
                                                                 append(commentsapi, div);
                                                                 })
