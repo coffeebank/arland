@@ -12,7 +12,7 @@ Moving forward, in order to continue to reduce overhead maintenance and labor ho
 
 All changes listed below will affect all Arland players, effective immediately.
 
-- **Arland's new website will be at [gitnisyl.github.io/arland](../)**  
+- **Arland's new website will be at [coffeebank.github.io/arland](../)**  
 We are migrating away from [arland.pythonanywhere.com](../) and into Github as our domain in order to help streamline website updates and allow quicker information access. Website redirects will remain in place for 6 months, effective today, to help our users transition.  
 
 
