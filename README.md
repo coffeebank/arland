@@ -2,7 +2,7 @@
 
 Arland: Minecraft Bedrock Server
 
-https://gitnisyl.github.io/arland
+https://coffeebank.github.io/arland
 
 <br />
 
@@ -21,4 +21,5 @@ You can view/do a pull request to edit the Server Status for Arland at
 Arland was created in collaboration with [oneskres](https://github.com/oneskres). See [our About page](https://gitnisyl.github.io/arland/about.html) for more info.
 
 Old domains:
+- ~~https://gitnisyl.github.io/arland~~ (1/10/20)
 - ~~https://arland.pythonanywhere.com~~ (6/2/19)
