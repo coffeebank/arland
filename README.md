@@ -9,16 +9,16 @@ https://coffeebank.github.io/arland
 ## View/Edit Arland IP
 
 You can view/do a pull request to edit the Server IP and Port (if relevant) for Arland at
-- [serverip.html](https://github.com/gitnisyl/arland/blob/master/serverip.html)
+- [serverip.html](https://github.com/coffeebank/arland/blob/master/serverip.html)
 
 You can view/do a pull request to edit the Server Status for Arland at
-- [status.html](https://github.com/gitnisyl/arland/blob/master/status.html)
+- [status.html](https://github.com/coffeebank/arland/blob/master/status.html)
 
 <br />
 
 ## Attributions and Notes
 
-Arland was created in collaboration with [oneskres](https://github.com/oneskres). See [our About page](https://gitnisyl.github.io/arland/about.html) for more info.
+Arland was created in collaboration with [oneskres](https://github.com/oneskres). See [our About page](https://coffeebank.github.io/arland/about.html) for more info.
 
 Old domains:
 - ~~https://gitnisyl.github.io/arland~~ (1/10/20)
