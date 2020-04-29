@@ -172,7 +172,7 @@ layout: default
             <div class="card-content">
                 <span class="acbpcline">Join the Conversation</span>
                 <p style="padding-top:0.25em;padding-bottom:0.25em;">People are talking. Add a new comment below!</p>
-                <a class="waves-effect waves-light btn cyan darken-1" style="margin-top:1em;margin-bottom:0.25em;" href="https://github.com/gitnisyl/arland/issues/5" target="_blank"><i class="material-icons">chat</i></a>
+                <a class="waves-effect waves-light btn cyan darken-1" style="margin-top:1em;margin-bottom:0.25em;" href="https://github.com/coffeebank/arland/issues/5" target="_blank"><i class="material-icons">chat</i></a>
             </div>
         </div>
         <a onclick="var delayInMS = 700;document.getElementById('showcommentsclicker').style.display='none';setTimeout(function() {document.getElementById('showcomments').style.display='block'}, delayInMS);" id="showcommentsclicker" style="cursor:pointer;display:block;margin-top:2em;">Load Comments...</a>
@@ -196,7 +196,7 @@ layout: default
         return parent.appendChild(el);
     }
     const commentsapi = document.getElementById('ghcomments');
-    const url = 'https://api.github.com/repos/gitnisyl/arland/issues/5/comments';
+    const url = 'https://api.github.com/repos/coffeebank/arland/issues/5/comments';
     fetch(url)
     .then((resp) => resp.json())
     .then(function(data) {

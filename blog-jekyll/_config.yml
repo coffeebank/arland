@@ -22,7 +22,7 @@ title: Arland Blog
 description: >- # this means to ignore newlines until "baseurl:"
   Arland is a Minecraft server run in a small group format, within a tightknit community of players. Start playing today!
 baseurl: "/blog" # the subpath of your site, e.g. /blog
-url: "https://gitnisyl.github.io/arland" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://coffeebank.github.io/arland" # the base hostname & protocol for your site, e.g. http://example.com
 feed:
   path: /feed.xml
 permalink: /:year:month:day-:title:output_ext
