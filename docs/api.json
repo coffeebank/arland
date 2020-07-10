@@ -1,3 +1,5 @@
+---
+---
 {
     serverName: "{{ site.data.server.serverName }}",
     serverIP: "{{ site.data.server.serverIP }}",
