@@ -4,7 +4,7 @@
     serverName: "{{ site.data.server.serverName }}",
     serverIP: "{{ site.data.server.serverIP }}",
     serverPort: "{{ site.data.server.serverPort }}",
-    compatibleVersions: "{{ site.data.server.compatibleVersions }}",
+    compatibleVersions: "{{ site.data.server.compatibleVersions | escape }}",
     shownotes: "{{ site.data.server.shownotes }}",
-    notes: "{{ site.data.server.notes }}"
+    notes: "{{ site.data.server.notes | escape }}"
 }
