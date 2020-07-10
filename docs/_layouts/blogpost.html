@@ -1,0 +1,126 @@
+---
+layout: default
+---
+
+<style>
+    body {
+        background-color: #efefef;
+    }
+    h1 {
+        font-size: 2.4rem;
+        padding-bottom: 1rem;
+        font-weight: bold;
+    }
+    .blogpbody {
+        font-size: 1.1rem;
+        line-height: 1.65rem;
+        padding-bottom: 3rem;
+    }
+    .blogpbody h2, h3, h4, h5, h6 {
+        font-size: 1.4rem;
+        padding-top: 1rem;
+        padding-bottom: 0.4rem;
+    }
+    .blogpbody strong, b {
+        font-weight: bold;
+    }
+    .blogpbody ul {
+        list-style-type: disc;
+        padding: 1rem;
+        margin-left: 0.5rem;
+    }
+</style>
+
+<div style="background-color:#414141;position:fixed;width:100%;">
+    <nav class="grey darken-3">
+        <div class="nav-wrapper">
+
+            <div class="show-on-med-and-down">
+                <div class="paddpc" id="hover">
+                    <a href="#" data-activates="slide-out" class="button-collapse waves-effect"><i class="material-icons">menu</i></a>
+                </div>
+                <script>  // Initialize collapse button
+                    $(".button-collapse").sideNav();
+                    // Initialize collapsible (uncomment the line below if you use the dropdown variation)
+                    $('.collapsible').collapsible();
+                </script>
+            </div>
+
+          <a id="stn" class="brand-logo" style="padding-left:15px;padding-right:15px;font-size:21px;cursor:pointer;" onclick="window.history.back();"><span class="wsite-button-inner">&#60;&ensp;Back</span></a>
+
+        </div>
+    </nav>
+</div>
+   
+<div style="width:95%;max-width:900px;margin-left:auto;margin-right:auto;padding-top:100px;padding-bottom:50px;">
+
+    <div>
+        <h1>{{ page.title }}</h1>
+        <div class="blogpbody">
+            {{ content }}
+        </div>
+    </div>
+
+    <div class="blog-social">
+        <script src="../js/clipboard.min.js"></script>
+        <script>new ClipboardJS('.clipbtn');</script>
+        <!-- Target -->
+        <input id="clipjshere" value="{{ site.url }}{{ page.url }}" style="width:88%;max-width:600px;">
+        <!-- Trigger -->
+        <button class="clipbtn" data-clipboard-target="#clipjshere" style="width:10%;max-width:40px;height:10%;max-height:40px;background:#efefef;border:0;overflow:hidden;">
+            <img src="../js/clipboardjs.svg" alt="Copy to clipboard" style="padding:5px;width:100%;">
+        </button>
+    </div>
+    
+    <a name="comments" id="comments"></a>
+    <div id="commentArea" style="margin-left:0;">
+        <div class="blog-comment-area">
+    
+            <div class="acbpccont" style="margin-top:40px;">
+                <div class="card horizontal grey lighten-4 acrounded acbpcomments">
+                    <div class="card-content">
+                        <span class="acbpcline">Join the Conversation</span>
+                        <p style="padding-top:0.25em;padding-bottom:0.25em;">People are talking. Add a new comment below!</p>
+                        <a class="waves-effect waves-light btn cyan darken-1" style="margin-top:1em;margin-bottom:0.25em;" href="https://github.com/coffeebank/arland/issues/5" target="_blank"><i class="material-icons">chat</i></a>
+                    </div>
+                </div>
+                <div id="showcomments">
+                    <div id="ghcomments"></div>
+                </div>
+            </div>
+            <script> // fetch api status
+                function createNode(element) {
+                    return document.createElement(element);
+                }
+                function append(parent, el) {
+                    return parent.appendChild(el);
+                }
+                const commentsapi = document.getElementById('ghcomments');
+                const url = 'https://api.github.com/repos/coffeebank/arland/issues/5/comments';
+                fetch(url)
+                .then((resp) => resp.json())
+                .then(function(data) {
+                    let commentsfeed = data;
+                    document.getElementById("ghcomments").innerHTML = "";
+                    return commentsfeed.map(function(comments) {
+                    let div = createNode('div');
+                    if (comments.created_at == comments.updated_at){
+                        div.className = `card horizontal grey lighten-2 acrounded acbpcomments`
+                        div.innerHTML = `<div class="card-image acbpcimg hide-on-small-only"><div class="card-content"><div style="display:flex;align-items:center;margin-bottom:0.5em;"><p class="acbpcdate"><b class="acbpcname">${comments.user.login}</b> - ${comments.created_at} <a href="${comments.html_url}" target="_blank">&#9656;</a></p></div><p>${comments.body}</p></div></div>`
+                    } else {
+                        div.className = `card horizontal grey lighten-2 acrounded acbpcomments`
+                        div.innerHTML = `<div class="card-image acbpcimg hide-on-small-only"><div class="card-content"><div style="display:flex;align-items:center;margin-bottom:0.5em;"><p class="acbpcdate"><b class="acbpcname">${comments.user.login}</b> - ${comments.created_at} <a href="${comments.html_url}" target="_blank">(edited) &#9656;</a></p></div><p>${comments.body.replace(/<[^>]*>?/gm, '')}</p></div></div>`
+                    } 
+                    append(commentsapi, div);
+                    })
+                })
+                .catch(function(error) {
+                    console.log(error);
+                });
+            </script>
+    
+    
+        </div>
+        <!-- bid-1: , path:  -->
+    </div>
+</div>

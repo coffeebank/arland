@@ -1,0 +1,29 @@
+<script>
+    // Handling errors
+    function handleErrors(response) {
+        if (!response.ok) {
+            document.getElementById('serverStatus').innerHTML = `Loading...`
+        }
+        return response;
+    }
+
+    // Fetch API, mcsrvstat
+    // {% assign pagehome = site.pages | where: 'pagefront', 'Home' %}
+    fetch('https://api.mcsrvstat.us/2/{{ site.data.server.serverIP }}')
+        .then(handleErrors)
+        .then(response => {
+            return response.json()
+        })
+        .then(data => {
+            if (data.online == true) {
+                document.getElementById('serverStatus').innerHTML = ``
+                document.getElementById('serverStatus').innerHTML = `<ul class="right"><li style="padding-left:15px;padding-right: 15px"><i class="green-text material-icons">lens</i></li><li style="padding-right: 25px">Status:&nbsp;&nbsp;<b>ONLINE</b></li></ul>`
+                document.getElementById('serverVer').innerHTML = ``
+                document.getElementById('serverVer').innerHTML = `Minecraft ${data.version} Server`
+                document.getElementById('serverVerS').innerHTML = `<b>Works on Java:&nbsp;&nbsp;</b>${data.version}`
+            }
+            else {
+                document.getElementById('serverStatus').innerHTML = `<ul class="right"><li style="padding-left:15px;padding-right: 15px"><i class="red-text material-icons">lens</i></li><li style="padding-right: 25px">Status:&nbsp;&nbsp;<b>OFFLINE</b></li></ul>`
+            }
+        })
+</script>

@@ -1,0 +1,20 @@
+<div id="newurl" class="modal">
+      <div class="modal-content">
+        <h4>We've changed our website's link!</h4>
+        <p>Please update your bookmark to <strong style="padding-left:5px;padding-right:5px;">https://gitnisyl.github.io/arland/</strong> to access our website in the future. <a href="https://arlandserver.weebly.com/blogframe/arland-updates-project-evergreen-and-beyond" target="_blank" rel="noopener">Learn more about our change here.</a></p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">OK</a>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function(){
+        // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+        $('.modal').modal();
+      });
+    </script>
+    <script type="text/javascript">
+      if(document.referrer){
+        $('#newurl').modal('open');
+      }else{}
+</script>

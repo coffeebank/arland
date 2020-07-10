@@ -1,0 +1,9 @@
+serverName: Arland
+
+compatibleVersions: Java, Bedrock
+
+serverIP: play.wyscraft.net
+serverPort: Default (none on Java)
+
+shownotes: false
+notes: The server will return to online status upon request or for private events. <a href="https://wysc.us.to/" target="_blank">See Wysc for more details.</a>

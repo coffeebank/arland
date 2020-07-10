@@ -1,0 +1,8 @@
+{
+    serverName: "{{ site.data.server.serverName }}",
+    serverIP: "{{ site.data.server.serverIP }}",
+    serverPort: "{{ site.data.server.serverPort }}",
+    compatibleVersions: "{{ site.data.server.compatibleVersions }}",
+    shownotes: "{{ site.data.server.shownotes }}",
+    notes: "{{ site.data.server.notes }}"
+}

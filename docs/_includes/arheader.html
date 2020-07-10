@@ -1,0 +1,67 @@
+<!--Import Google Icons and Fonts-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+<!--Import materialize.css-->
+<link type="text/css" rel="stylesheet" href="/css/materialize.min.css"  media="screen,projection"/>
+
+<!-- register service worker -->
+<script>
+    if ('serviceWorker' in navigator){
+    window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/service-worker.js')
+    .then(function() { console.log('[ PWA Fire Bundle ] Service Worker Registered'); });
+    });
+    }
+</script>
+
+<!--Let browser know website is optimized for mobile
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/> -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+<meta name="description" content="Arland is a Minecraft server run in a small group format, within a tightknit community of players. Start playing today!"/>
+
+<!-- mobile webapp stuffs -->
+<!-- <link rel="manifest" href="manifest.json"> chrome -->
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#414141"> 
+<link rel="icon" sizes="128x128" href="/media/icon.png">
+<meta name="apple-mobile-web-app-title" content="Arland App" /> <!-- safari/ios -->
+<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="apple-touch-startup-image" href="/media/icon.png">
+<link rel="apple-touch-icon" href="/media/faviconhd.ico" />
+
+
+<!-- start of Web Manifest -->
+    <link rel="manifest" href="/app.webmanifest">
+<!-- end of Web Manifest -->
+
+<!-- google -->
+<meta name="google-site-verification" content="zqAmu3gsMd4YRk6M3zUMkIprDgoQGQV7prZEMaZu6LA" />
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-88021769-3"></script>
+
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-88021769-3');
+</script>
+
+<!-- Custom CSS -->
+<link type="text/css" rel="stylesheet" href="/main.css" />
+<link rel='stylesheet' href='/css/nprogress.css'/>
+<title>Arland - Minecraft Bedrock Server</title>
+<link rel="shortcut icon" href="/favicon.ico" />
+
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="/js/materialize.min.js"></script>
+<script src='/js/nprogress.js'></script>
+
+<noscript>
+    <style>
+        #hidenojs {display:none;}
+    </style>
+</noscript>

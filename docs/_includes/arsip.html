@@ -1,0 +1,16 @@
+<div id="serverip">
+    <div class="card-content">
+        <h5 class="card-title" style="padding-bottom:10px"><u>{{ site.data.server.serverName }} Minecraft Server</u></h5>
+        <p><b>Server IP:&nbsp;&nbsp;</b>{{ site.data.server.serverIP }}</p>
+        <p><b>Server Port:&nbsp;&nbsp;</b>{{ site.data.server.serverPort }}</p>
+        <p>-</p>
+        {% if site.data.server.compatibleVersions contains "Java" %}<p id="serverVerS"><b>Works on Java:&nbsp;&nbsp;</b> Currently offline</p>{% endif %}
+        {% if site.data.server.compatibleVersions contains "Bedrock" %}<p><b>Works on Bedrock:&nbsp;&nbsp;</b>Latest version</p>{% endif %}
+        {% if site.data.server.shownotes == true %}<p style="padding-top:1rem;">{{ site.data.server.notes }}</p>{% endif %}
+    </div>
+</div>
+<div id="nojs">
+    <p>Sorry! Your browser doesn't support javascript.</p>
+    <p><a href="serverip.html" target="_blank">See the Server IP here ></a></p>
+    <p><a href="status.html" target="_blank">See the Server Status here ></a></p>
+</div>
