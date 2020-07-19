@@ -1,9 +1,11 @@
-serverName: Arland
+serverName: Wyscraft
 
 compatibleVersions: Java, Bedrock
 
 serverIP: play.wyscraft.net
 serverPort: Default (none on Java)
+
+discordURL: https://discord.gg/DThkfqg
 
 shownotes: false
 notes: The server will return to online status upon request or for private events. <a href="https://wysc.us.to/" target="_blank">See Wysc for more details.</a>

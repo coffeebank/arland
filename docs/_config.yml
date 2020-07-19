@@ -1,10 +1,9 @@
 title: Arland
-email: fredpaletto+arland@gmail.com
 description: Arland is a Minecraft server run in a small group format, within a tightknit community of players. Start playing today!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.wyscraft.net/" # the base hostname & protocol for your site, e.g. https://coffeebank.github.io/arland
 feed:
-  path: /feed.xml
+  path: /blog/feed.xml
 permalink: /blog/:year:month:day-:title:output_ext
 
 # Build settings

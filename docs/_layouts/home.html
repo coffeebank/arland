@@ -61,7 +61,7 @@ layout: default
         <h6>We are</h5>
             <h3 style="letter-spacing:1px;text-transform:uppercase;padding-bottom:5px;"><b>{{ site.data.server.serverName }}</b></h3>
             <h5 id="serverVer">Minecraft Server</h5>
-            <br><br><br><br><i class="material-icons" style="font-size: 36px;">arrow_drop_down_circle</i>
+            <br><br><br><br><a href="#play" style="color:inherit;text-decoration:none;"><i class="material-icons" style="font-size: 36px;user-select:none;">arrow_drop_down_circle</i></a>
     </div>
 </div>
 
@@ -121,24 +121,22 @@ layout: default
         <div class="col s12 m6 center-align">
 
             <h6 class="grey-text text-lighten-1"
-                style="font-weight: 300;letter-spacing: 1px;padding-top:10px;padding-bottom:10px;">JOIN OUR DISCORD
-                SERVER</h6>
+                style="font-weight: 300;letter-spacing: 1px;padding-top:10px;padding-bottom:10px;text-transform:uppercase;">Join our Discord Server</h6>
             <h4 class="grey-text text-lighten-5"
-                style="letter-spacing: 2px;font-size:32px;padding-top:10px;padding-bottom:10px;"><b>#ARLAND-MC</b></h4>
+                style="letter-spacing: 2px;font-size:32px;padding-top:10px;padding-bottom:10px;text-transform:uppercase;"><b>#{{ site.data.server.serverName }}</b></h4>
             <h5 class="grey-text text-lighten-2"
-                style="letter-spacing: 0.5px;font-size:18px;padding-top:10px;padding-bottom:10px;">Get the latest Arland
-                updates, plus a friendly, engaging community!</h5>
+                style="letter-spacing: 0.5px;font-size:18px;padding-top:10px;padding-bottom:10px;">Get the latest {{ site.data.server.serverName }} updates, plus a friendly, engaging community!</h5>
             <br><br>
-            <a class="waves-effect waves-light btn-large modal-trigger light-blue darken-3" id="hidenojs"
-                href="#modal1"><i class="material-icons left">forum</i>JOIN NOW&nbsp;&nbsp;&nbsp;&#62;</a>
-            <div id="nojs" class="grey-text text-lighten-2">
+            <a class="waves-effect waves-light btn-large modal-trigger light-blue darken-3"
+                href="{{ site.data.server.discordURL }}" target="_blank" rel="noopener" style="text-transform:uppercase;"><i class="material-icons left">forum</i>Join Now&nbsp;&nbsp;&nbsp;&#62;</a>
+            <!-- <div id="nojs" class="grey-text text-lighten-2">
                 <p><a href="https://discord.gg/htYgEuC" target="_blank">JOIN NOW&nbsp;&#62;</a></p>
-            </div>
+            </div> -->
 
             <!-- https://discord.gg/htYgEuC discord invite link -->
 
             <!-- Modal Structure -->
-            <div id="modal1" class="modal">
+            <!-- <div id="modal1" class="modal">
                 <div class="modal-content grey darken-3">
                     <div class="hide-on-small-only">
                         <h4 class="grey-text text-lighten-5">Arland Discord Server</h4>
@@ -201,31 +199,32 @@ layout: default
                     // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
                     $('.modal').modal();
                 });
-            </script>
+            </script> -->
 
         </div>
 
         <div class="col s12 m6 center-align">
             <div class="hide-on-small-and-down"><img alt="discord logo" src="media/discordlogo.png" width="40%" /></div>
-            <br><br>
-            <iframe title="Discord server widget"
-                src="https://discordapp.com/widget?id=319372945929666571&amp;theme=dark" width="85%" height="70"
-                allowtransparency="true" frameborder="0"></iframe>
         </div>
     </div>
 </div>
 
-<div id="download"
-    style="background-color:#4a6f28;padding-top:20vh;padding-bottom:10vh;padding-left:5%;padding-right:5%;">
+<div id="download" style="background-color:#4a6f28;padding-top:20vh;padding-bottom:10vh;padding-left:5%;padding-right:5%;">
 
     <div class="row">
         <div class="col s12 m6 center-align">
 
-            <h5 class="grey-text text-lighten-4">Download Minecraft Bedrock<br>
-                <h6 class="grey-text text-lighten-3" style="padding-bottom:20px">(formerly Pocket Edition)</h6>
+            <h5 class="grey-text text-lighten-4">Download Minecraft<br>
+                <h6 class="grey-text text-lighten-3" style="padding-bottom:20px">Works on both Java and Bedrock!</h6>
             </h5>
 
             <ul class="collapsible popout" data-collapsible="accordion">
+                <li>
+                    <div class="collapsible-header hoverable"><i class="material-icons">desktop_mac</i>Desktop (Windows, Mac, and Linux)</div>
+                    <div class="collapsible-body white"><a class="waves-effect waves-light btn-large red darken-1"
+                            href="https://www.minecraft.net/en-us/download/"
+                            target="_blank"><i class="material-icons left">open_in_new</i>Download</a></div>
+                </li>
                 <li>
                     <div class="collapsible-header hoverable"><i class="material-icons">smartphone</i>Android</div>
                     <div class="collapsible-body white"><a class="waves-effect waves-light btn-large teal darken-1"
@@ -233,8 +232,7 @@ layout: default
                             target="_blank"><i class="material-icons left">open_in_new</i>Download</a></div>
                 </li>
                 <li>
-                    <div class="collapsible-header hoverable"><i class="material-icons">phone_iphone</i>iPhone/iPad
-                    </div>
+                    <div class="collapsible-header hoverable"><i class="material-icons">phone_iphone</i>iPhone/iPad</div>
                     <div class="collapsible-body white"><a
                             class="waves-effect waves-dark btn-large grey lighten-2 grey-text text-darken-3"
                             href="https://itunes.apple.com/us/app/minecraft/id479516143?mt=8" target="_blank"><i
