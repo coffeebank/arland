@@ -1,11 +1,11 @@
-serverName: Wyscraft
+serverName: Arland
 
 compatibleVersions: Java, Bedrock
 
-serverIP: play.wyscraft.net
-serverPort: Default (none on Java)
+serverIP: Offline
+serverPort: Offline
 
-discordURL: https://discord.gg/DThkfqg
+discordURL: #top
 
-shownotes: false
-notes: The server will return to online status upon request or for private events. <a href="https://wysc.us.to/" target="_blank">See Wysc for more details.</a>
+shownotes: true
+notes: The server will return to online status upon request or for private events. <a href="https://coffeebank.github.io/wyscraft" target="_blank">See Wysc for more details.</a>
