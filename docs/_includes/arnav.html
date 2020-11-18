@@ -7,9 +7,9 @@
         <a href="{% if page.pagefront == "Home" %}#stt{%else%}/index.html{% endif %}"><span class="white-text name" style="padding-top:10px">{{ site.data.server.serverName }}</span></a>
         <a href="{% if page.pagefront == "Home" %}#stt{%else%}/index.html{% endif %}"><span class="white-text email" id="serverVer">Minecraft Server</span></a>
         </div></li>
-    <li><a class="waves-effect" href="{% if page.pagefront != "Home" %}/index.html{% endif %}#play"><i class="material-icons">gamepad</i>Play Now</a></li>
-    <li><a class="waves-effect" href="{% if page.pagefront != "Home" %}/index.html{% endif %}#discord"><i class="material-icons">chat</i>Join our Discord</a></li>
-    <li><a class="waves-effect" href="{% if page.pagefront != "Home" %}/index.html{% endif %}#download"><i class="material-icons">devices</i>What is Bedrock?</a></li>
+    <li><a class="waves-effect" href="{% if page.pagefront != "Home" %}{{ site.baseurl }}/index.html{% endif %}#play"><i class="material-icons">gamepad</i>Play Now</a></li>
+    <li><a class="waves-effect" href="{% if page.pagefront != "Home" %}{{ site.baseurl }}/index.html{% endif %}#discord"><i class="material-icons">chat</i>Join our Discord</a></li>
+    <li><a class="waves-effect" href="{% if page.pagefront != "Home" %}{{ site.baseurl }}/index.html{% endif %}#download"><i class="material-icons">devices</i>What is Bedrock?</a></li>
     
     <li><div class="divider"></div></li>
     <li><a class="subheader">More</a></li>
