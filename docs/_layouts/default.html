@@ -2,6 +2,8 @@
 <html>
 <head oncontextmenu="return false;">
 
+  <meta name="robots" content="noindex, nofollow">
+
     {% include arheader.html %}
 
     <!-- github has https
@@ -18,26 +20,6 @@
           $("#serverip").load("serverip.html"); 
         });
     </script> -->
-    <script>
-
-        // Show the progress bar 
-        NProgress.start();
-
-        // Increase randomly
-        var interval = setInterval(function() { NProgress.inc(); }, 1000);        
-
-        // Trigger finish when page fully loaded
-        jQuery(window).load(function () {
-            clearInterval(interval);
-            NProgress.done();
-        });
-
-        // Trigger bar when exiting the page
-        jQuery(window).unload(function () {
-            NProgress.start();
-        });
-
-    </script>
     <script>
         function absorbEvent_(event) {
           var e = event || window.event;
@@ -115,17 +97,6 @@
             }
           });
     </script> -->
-    <script>
-        // When the user scrolls the page, execute myFunction 
-        window.onscroll = function() {myFunction()};
-
-        function myFunction() {
-          var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-          var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-          var scrolled = (winScroll / height) * 100;
-          document.getElementById("myBar").style.width = scrolled + "%";
-        }
-    </script>
 </head>
 <body>
     <div id="stt"></div>
