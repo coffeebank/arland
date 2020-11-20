@@ -1,5 +1,0 @@
----
-layout: home
-pagefront: Home
-
----
