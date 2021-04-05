@@ -1,7 +1,3 @@
-var granjs = document.createElement('script'); 
-granjs.src = "/home/assets/granjs/arland.js"; 
-document.head.appendChild(granjs);
-
 jQuery(function($) {
 
    // Fixed nav
